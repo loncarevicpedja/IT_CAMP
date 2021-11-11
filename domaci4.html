@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        ol li{
+            display: inline-block;
+            padding: 10px;
+        }
+        ol li a{
+            text-decoration: none;
+            color: white;
+        }
+        ol{
+            text-align: center;
+        }
+        .kartice ul li{
+            text-decoration: none;
+            height: 10em;
+            width: 10em;
+            background-color: #ffc;
+            display: inline-block;
+            margin: 20px;
+            padding: 16px;
+        }
+        .kartice{
+            width: 95%;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+<script>
+    function prvaPromena(){
+        var naslov = document.querySelectorAll("#head");
+        var tekst = document.querySelectorAll("#tekst");
+        for(let i=0;i<=9;i++)
+        {
+            kartica[i].style.backgroundColor = "#ffc";
+            naslov[i].style.fontSize = "16px";
+            tekst[i].style.fontSize = "16px";
+            naslov[i].style.fontWeight = "normal";
+            kartica[i].style.boxShadow = "0px 0px 0px rgb(0 0 0 / 0%)";
+            kartica[i].style.transform = "rotate(0deg)";
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");
+            kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(0deg)");
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "10em");
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "10em");
+
+        }
+    }
+    function drugaPromena(){
+        var naslov = document.querySelectorAll("#head");
+        var tekst = document.querySelectorAll("#tekst");
+        var kartica = document.querySelectorAll("#kartica");
+        for(let i=0;i<=9;i++)
+        {
+            kartica[i].style.backgroundColor = "#ffc";
+            naslov[i].style.fontSize = "23px";
+            naslov[i].style.fontWeight = "bold";
+            tekst[i].style.fontSize = "16px";
+            kartica[i].style.boxShadow = "5px 5px 7px rgb(33 33 33 / 70%)";
+            kartica[i].style.transform = "rotate(0deg)";
+            
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");
+            kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(0deg)");
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "10em");
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "10em");
+        }
+    }
+
+    function trecaPromena(){
+        var naslov = document.querySelectorAll("#head");
+        var tekst = document.querySelectorAll("#tekst");
+        var kartica = document.querySelectorAll("#kartica")
+        for(let i=0;i<=9;i++)
+        {
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "10em");
+            kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "10em");
+            kartica[i].style.backgroundColor = "#ffc";
+            naslov[i].style.fontSize = "23px";
+            naslov[i].style.fontWeight = "bold";
+            tekst[i].style.fontSize = "16px";
+            kartica[i].style.boxShadow = "5px 5px 7px rgb(33 33 33 / 70%)";
+            if(i%2!=0)
+            {
+                kartica[i].style.transform = "rotate(10deg)";
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(10deg)");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(10deg)");
+            }
+            else
+            {
+                kartica[i].style.transform = "rotate(-10deg)";
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(-10deg)");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(-10deg)");
+            }
+            
+        }
+    }
+    function cetvrtaPromena(){
+        var naslov = document.querySelectorAll("#head");
+        var tekst = document.querySelectorAll("#tekst");
+        var kartica = document.querySelectorAll("#kartica")
+        for(let i=0;i<=9;i++)
+        {
+            kartica[i].style.backgroundColor = "#ffc";
+            naslov[i].style.fontSize = "23px";
+            naslov[i].style.fontWeight = "bold";
+            tekst[i].style.fontSize = "16px";
+            kartica[i].style.boxShadow = "5px 5px 7px rgb(33 33 33 / 70%)";
+            if(i%2!=0)
+            {
+                kartica[i].style.transform = "rotate(10deg)";
+            }
+            else
+            {
+                kartica[i].style.transform = "rotate(-10deg)";
+            }
+            if(i%2!=0)
+            {
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "15em");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transition = "0.5s");  
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "15em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.height = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.width = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(10deg)");
+            }
+            else
+            {
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");                
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "15em");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "15em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.height = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.width = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(-10deg)");
+
+            }
+        }
+    }
+    function petaPromena(){
+        var naslov = document.querySelectorAll("#head");
+        var tekst = document.querySelectorAll("#tekst");
+        var kartica = document.querySelectorAll("#kartica")
+        for(let i=0;i<=9;i++)
+        {
+            naslov[i].style.fontSize = "23px";
+            naslov[i].style.fontWeight = "bold";
+            tekst[i].style.fontSize = "16px";
+            kartica[i].style.boxShadow = "5px 5px 7px rgb(33 33 33 / 70%)";
+            if(i%2!=0)
+            {
+                kartica[i].style.transform = "rotate(10deg)";
+            }
+            else
+            {
+                kartica[i].style.transform = "rotate(-10deg)";
+            }
+            if(i%2!=0)
+            {
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "15em");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transition = "0.5s");  
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "15em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.height = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.width = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(10deg)");
+            }
+            else
+            {
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transform = "rotate(0deg)");                
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transition = "0.5s");                
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.height = "15em");
+                kartica[i].addEventListener('mouseenter', () => kartica[i].style.width = "15em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.height = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.width = "10em");
+                kartica[i].addEventListener('mouseleave', () => kartica[i].style.transform = "rotate(-10deg)");
+
+            }
+            if(i%3==0)
+            {
+                kartica[i].style.backgroundColor = "green";
+            }
+            else if(i%2==0)
+            {
+                kartica[i].style.backgroundColor = "skyblue";
+            }
+            else
+            {
+                kartica[i].style.backgroundColor = "#ffc";
+            }
+        }
+    }
+</script>
+<body>
+    <ol>
+        <li><a href="#" onclick="prvaPromena()" >Step#1</a></li>
+        <li><a href="#" onclick="drugaPromena()">Step#2</a></li>
+        <li><a href="#" onclick="trecaPromena()">Step#3</a></li>
+        <li><a href="#" onclick="cetvrtaPromena()">Step#4</a></li>
+        <li><a href="#" onclick="petaPromena()">Step#5</a></li>
+    </ol>
+    <div class="kartice">
+        <ul>
+            <li id="kartica">
+                <p id="head">Title#1</p>
+                <p id="tekst">Text content #1</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#2</p>
+                <p id="tekst">Text content #2</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#3</p>
+                <p id="tekst">Text content #3</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#4</p>
+                <p id="tekst">Text content #4</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#5</p>
+                <p id="tekst">Text content #5</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#6</p>
+                <p id="tekst">Text content #6</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#7</p>
+                <p id="tekst">Text content #7</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#8</p>
+                <p id="tekst">Text content #8</p>
+            </li>
+            <li id="kartica">
+                <p id="head">Title#9</p>
+                <p id="tekst">Text content #9</p>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
