@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .glavni{
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                'slider slider slider slider slider slider'
+                'left navbar navbar navbar navbar right'
+                'left content content content content right'
+                'info info logo logo map map'
+                'footer footer footer footer footer footer';
+        }
+        .item1{
+            grid-area: header;
+            height: 50px;
+            background-color: skyblue;
+        }
+        .item2{
+            grid-area: slider;
+            height: 300px;
+            background-color: white;
+        }
+        .item3{
+            grid-area: navbar;
+            height: 50px;
+            background-color: skyblue;
+        }
+        .item4{
+            grid-area: left;
+            height: 663px;
+            background-color: white;
+        }
+        .item5{
+            grid-area: content;
+            height: 600px;
+            background-color: white;
+        }
+        .item6{
+            grid-area: right;
+            height: 663px;
+            background-color: white;
+        }
+        .item7{
+            grid-area: footer;
+            height: 50px;
+            background-color: skyblue;
+        }
+        .item8{
+            grid-area: info;
+            height: 350px;
+            background-color: white;
+        }
+        .item9{
+            grid-area: logo;
+            height: 350px;
+            background-color: skyblue;
+        }
+        .item10{
+            grid-area: map;
+            height: 350px;
+            background-color: white;
+        }
+        .glavni > div{
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cyrcle{
+            margin: 5px;
+            background-color: grey;
+            border-radius: 50%;
+            width: 65%;
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="glavni">
+        <div class="item1">Header</div>
+        <div class="item2">Slider</div>
+        <div class="item3">Navbar</div>
+        <div class="item4">Left</div>
+        <div class="item5">Content</div>
+        <div class="item6">Right</div>
+        <div class="item7">Footer</div>
+        <div class="item8">Info</div>
+        <div class="item9">
+            <div class="cyrcle">LOGO</div>
+        </div>
+        <div class="item10">Map</div>
+    </div>
+</body>
+</html>
