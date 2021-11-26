@@ -1,0 +1,233 @@
+.brod{
+    height: 700px;
+    width: 100%;
+}
+.ship{
+    position: relative;
+}
+.naslov{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+}
+.naslov_heading{
+    font-size: 100px;
+    color: white;
+    font-family: Oswald, serif ;
+    margin-bottom: 0;
+}
+.since{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    align-items: center;
+}
+.kamion_about{
+    height: 500px;
+}
+.about_heading{
+    color: black;
+    font-family: Oswald, sans-serif ;
+    font-size: 50px;
+}
+.since_b{
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.about_text{
+    padding: 5% 5% 5% 2%;
+}
+.about_p{
+    font-family: Open Sans, sans-serif;
+}
+.about_btn{
+    background-color: #ff5126;
+    width: 135px;
+    height: 42px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border: none;
+}
+.trikartice{
+    display: flex;
+    flex-direction: row;
+}
+.prva_kartica{
+    background-color: red;
+    width: 33.33%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.druga_kartica{
+    background-color: green;
+    width: 33.33%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.treca_kartica{
+    background-color: greenyellow;
+    width: 33.33%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.vozackamiona{
+    height: 100%;
+}
+.teretnibrod{
+    height: 100%;
+    width: 100%;
+}
+.luka{
+    height: 100%;
+}
+.pk_sadrzaj{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    color: white;
+}
+.pkg_sadrzaj{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    color: white;
+}
+.pkg_sadrzaj > h1{
+    font-family: Oswald, sans-serif;
+}
+.pk_sadrzaj > p{
+    font-family: Open Sans, sans-serif;
+}
+.pk_sadrzaj > h1{
+    font-family: Oswald, sans-serif;
+}
+.pkg_sadrzaj > p{
+    font-family: Open Sans, sans-serif;
+}
+.naslov_ispod_kartica > h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Oswald, sans-serif;
+}
+.naslov_ispod_kartica > p{
+    text-align: center;
+    font-size: larger;
+}
+.naslov_ispod_kartica{
+    padding: 5%;
+}
+.druge_kartice{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0% 10% 10% 10%;
+}
+.respectful{
+    height: 200px;
+    width: 50%;
+}
+.independent{
+    height: 200px;
+    width: 50%;
+}
+.personal{
+    height: 200px;
+    width: 50%;
+}
+.sustainable{
+    height: 200px;
+    width: 50%;
+}
+.ikonica{
+    height: 100%;
+    width: 20%;
+    background-color: black;
+}
+.resp_content{
+    width: 80%;
+}
+.sus_content{
+    width: 80%;
+}
+.per_content{
+    width: 80%;
+}
+.ind_content{
+    width: 80%;
+}
+.respectful{
+    display: flex;
+    flex-direction: row;
+}
+.resp_content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.resp_h > h1{
+    font-family: Oswald, sans-serif;
+    margin-left: 10px;
+}
+.resp_p > p{
+    font-family: Oswald, sans-serif;
+    margin: 0px 10px 10px 10px;
+}
+.independent{
+    display: flex;
+    flex-direction: row;
+}
+.ind_content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.ind_h > h1{
+    font-family: Oswald, sans-serif;
+    margin-left: 10px;
+}
+.ind_p > p{
+    font-family: Oswald, sans-serif;
+    margin: 0px 10px 10px 10px;
+}
+.personal{
+    display: flex;
+    flex-direction: row;
+}
+.per_content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.per_h > h1{
+    font-family: Oswald, sans-serif;
+    margin-left: 10px;
+}
+.per_p > p{
+    font-family: Oswald, sans-serif;
+    margin: 0px 10px 10px 10px;
+}
+.sustainable{
+    display: flex;
+    flex-direction: row;
+}
+.sus_content{
+    display: flex;
+    flex-direction: column;
+}
+.sus_h > h1{
+    font-family: Oswald, sans-serif;
+    margin-left: 10px;
+}
+.sus_p > p{
+    font-family: Oswald, sans-serif;
+    margin: 0px 10px 10px 10px;
+}
