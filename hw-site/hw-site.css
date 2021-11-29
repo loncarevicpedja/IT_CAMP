@@ -1,5 +1,10 @@
+body{
+    background-color: #dce2d8;
+    margin: 0;
+    padding: 0;
+}
 .brod{
-    height: 700px;
+    height: 100vh;
     width: 100%;
 }
 .ship{
@@ -149,8 +154,7 @@
 }
 .ikonica{
     height: 100%;
-    width: 20%;
-    background-color: black;
+    width: 15%;
 }
 .resp_content{
     width: 80%;
@@ -230,4 +234,264 @@
 .sus_p > p{
     font-family: Oswald, sans-serif;
     margin: 0px 10px 10px 10px;
+}
+.druge_tri_kartice{
+    display: flex;
+    flex-direction: row;
+}
+.fal{
+    font-size: 75px;
+    text-align: center;
+    color: #ff5126;
+}
+.far{
+    font-size: 75px;
+    text-align: center;
+    color: #ff5126;
+}
+.fas{
+    font-size: 85px;
+    text-align: center;
+    color: #ff5126;
+    margin-bottom: 10%;
+}
+.tbrod{
+    width: 100%;
+    height: 100%;
+}
+.put{
+    height: 100%;
+}
+.voz{
+    height: 100%;
+}
+.slika_slajder{
+    height: 100vh;
+    width: 50vw;
+}
+.slajder{
+    display: flex;
+    flex-direction: row;
+}
+.tekst_slajder{
+    margin: 10% 5% 0 5%;
+}
+.slajder_tekst{
+    font-family: Oswald, sans-serif;
+}
+.logoi{
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    background-color: #dcefd8;
+}
+.img{
+    height: 70px;
+    width: 70px;
+}
+.naslov_sa_dugmetom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+.naslov_sa_dugmetom > h1{
+    font-size: 40px;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+}
+.vlasnici{
+    width: 100%;
+    position: relative;
+}
+.pozadina{
+    width: 100%;
+    height: 50vw;
+}
+.naslovi > h1{
+    font-size: 50px;
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    color: white;
+}
+.naslovi{
+    position: absolute;
+    top: 5%;
+    width: 45%;
+    left: 27.5%;
+    text-align: center;
+}
+.proba{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: white;
+}
+.proba1{
+    font-family: Open Sans, sans-serif;
+    color: white;
+}
+.osobe{
+    margin-left: 12%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0%;
+}
+.o1{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.osoba{
+    margin: 50px;
+}
+.about1{
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.lokacija{
+    width: 20%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+.ikonica{
+    height: 100%;
+    width: 30%;
+}
+.adresa{
+    height: 100%;
+    width: 70%;
+}
+.adresa > h3{
+    font-family: Oswald, sans-serif;
+}
+.adresa > p{
+    font-family: Open Sans, sans-serif;
+    line-height: 20%;
+}
+.lokacije{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+.lokacija{
+    margin: 20px;
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    color: wheat;
+}
+@media only screen and (max-width: 420px){
+    .naslov_heading{
+        font-size: 70px;
+    }
+    .naslov{
+        margin: 0% 0% -10% 5%;
+    }
+    .kamion_about{
+        width: 100%;
+    }
+    .naslov_sa_dugmetom{
+        margin-bottom: 10%;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .osobe{
+        display: flex;
+        flex-direction: column;
+    }
+    .brod{
+        width: 250vw;
+    }
+    .ship{
+        overflow: hidden;
+    }
+    .trikartice{
+        display: flex;
+        flex-direction: column;
+    }
+    .respectful{
+        width: 100%;
+        height: auto;
+    }
+    .independent{
+        width: 100%;
+    }
+    .personal{
+        width: 100%;
+    }
+    .sustainable{
+        width: 100%;
+    }
+    .prva_kartica{
+        width: 100%;
+    }
+    .druga_kartica{
+        width: 100%;
+    }
+    .treca_kartica{
+        width: 100%;
+    }
+    .about_heading{
+        font-size: 30px;
+    }
+    .druge_kartice{
+        display: flex;
+        flex-direction: column;
+    }
+    .naslov_sa_dugmetom > h1{
+        font-size: 30px;
+    }
+    .druge_tri_kartice{
+        display: flex;
+        flex-direction: column;
+    }
+    .slika_slajder{
+        width: 100%;
+        height: 80vh;
+    }
+    .logoi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .vlasnici{
+        overflow: hidden;
+    }
+    .about1{
+        display: flex;
+        flex-direction: column;
+    }
+    .lokacije{
+        display: flex;
+        flex-direction: column;
+    }
+    .lokacija{
+        width: 80%;
+        height: 70%;
+    }
+    .pozadina{
+        height: 280vh;
+        width: 500vw;
+        overflow: hidden;
+    }
+    .img{
+        height: 40%;
+        width: 40%;
+        margin: 7% 0% 7% 0%;
+    }
+    .slajder{
+        display: flex;
+        flex-direction: column;
+    }
 }
