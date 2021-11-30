@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .glavni{
+            display: flex;
+            flex-direction: column;
+        }
+        ul, li{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: 0px 10px 0 10px;
+        }
+        h1{
+            font-size: 120px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin: 10px;
+        }
+        .footer{
+            position: relative;
+            height: 50px;
+            height: 17vh;
+            
+        }
+        .f_list{
+            position: absolute;
+            bottom: 5;
+            left: 0;
+        }
+        p{
+            display: inline-block;
+        }
+        .f_list_r{
+            position: absolute;
+            right: 0;
+        }
+        .input{
+            height: 40px;
+            width: 500px;
+            border: 1px solid silver;
+            border-radius: 20px;
+        }
+        .unos_input{
+            width: 90%;
+            height: 85%;
+            outline: none;
+            border: none;
+        }
+        .levi_deo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 50%;
+            height: 100%;
+        }
+        .desni_deo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .input{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .unos{
+            width: 80%;
+            height: 100%;
+        }
+        .fas{
+            margin: 13px;
+        }
+        .nabar ul li{
+            align-items: center;
+        }
+        .nabar{
+            height: 10vh;
+        }
+        .main{
+            height: 73vh;
+        }.input:hover{
+            box-shadow: 2px 0.5px 5px 1px;
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        .dugmici{
+            margin-top: 20px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="glavni">
+        <div class="nabar">
+            <ul>
+                <li>Gmail</li>
+                <li>Slike</li>
+                <li><i class="fas fa-ellipsis-v"></i></li>
+                <li><i class="fas fa-circle"></i></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1>Google</h1>
+            <div class="input">
+                <div class="levo_deo">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="unos">
+                    <input class="unos_input" type="text">
+                </div>
+                <div class="desni_deo">
+                    <i class="fas fa-keyboard"></i> 
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
+            <div class="dugmici">
+                <button>Google pretraga</button>
+                <button>Iz prve ruke</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Srbija</p>
+            <hr>
+            <ul class="f_list">
+                <li>Osnovni podaci</li>
+                <li>Oglasavanje</li>
+                <li>Za posao</li>
+                <li>Kako radi pretraga</li>
+            </ul>
+            <ul class="f_list_r">
+                <li>Privatnost</li>
+                <li>Uslovi</li>
+                <li>Podesavanja</li>
+            </ul>
+        </div>
+</body>
+</html>
