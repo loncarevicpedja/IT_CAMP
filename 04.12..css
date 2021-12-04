@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slika{
+    height: 100vh;
+    width: 60vw;
+}
+.forma{
+    padding: 20px;
+}
+.glavni{
+    display: flex;
+    flex-direction: row;
+}
+.google{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.apple{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.registruj{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.prijava{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 30px;
+    width: 100%;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#twiter{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.naslov{
+    font-size: 70px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.vin{
+    margin-top: 20px;
+}
+.uslovi{
+    font-size: 11px;
+    margin-top: 5px;
+}
+.dugmici{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.ili{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+#googleicon{
+    margin: 5px;
+}
+.prijavi_Se{
+    margin-top: 30px;
+}
