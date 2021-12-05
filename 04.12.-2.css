@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.glavni{
+    width: 50vw;
+    background-color: white;
+    height: auto;
+}
+.header{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.naslov{
+    color: white;
+    font-family: sans-serif;
+}
+.ime{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;    
+}
+.pol{
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    width: 50%;    
+}
+.main{
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+input{
+    height: 40px;
+}
+.stan_interfon{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 3%;
+}
+.stan{
+    width: 30%;
+    margin-right: 10%;
+}
+.interfon{
+    width: 60%;
+}
+.stan input{
+    width: 90%;
+}
+.interfon input{
+    width: 100%;
+}
