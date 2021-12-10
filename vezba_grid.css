@@ -4,28 +4,139 @@
     box-sizing: border-box;
 }
 .glavni{
+    width: 728px;
     display: grid;
     grid-template-areas: 
-    'header'
-    'hnm'
-    'vnm';
-
-
+    'header header header'
+    'hnm hnm hnm '
+    'levi srednji desni'
+    'f f f';
 }
 .item1{
     grid-area: header;
     background-color: silver;
     width: 728px;
     height: 90px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .item2{
+    margin: 0px 5px 0px 5px;
     grid-area: hnm;
     background-color: green;
     width: 728px;
     height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item9{
+    grid-area: f;
+    background-color: green;
+    width: 725px;
+    height: 30px;
+    margin: 0px 0px 0px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .item3{
-    grid-area: vnm;
     background-color: silver;
-    width: 100px;
+    width: 120px;
+    height: 150px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item4{
+    background-color: silver;
+    width: 468px;
+    height: 60px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item10{
+    background-color: silver;
+    width: 468px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item5{
+    background-color: green;
+    width: 120px;
+    margin-bottom: 5px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item8{
+    background-color: silver;
+    width: 120px;
+    height: 90px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item6{
+    height: 240px;
+    width: 120px;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item11{
+    height: 245px;
+    width: 120px;
+    background-color: silver;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item7{
+    height: 270px;
+    width: 468px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.leva_grupa{
+    margin: 5px;
+    grid-area: levi;
+    display: flex;
+    margin-right: 0;
+    flex-direction: column;
+}
+.srednja_grupa{
+    margin: 5px;
+    grid-area: srednji;
+    display: flex;
+    flex-direction: column;
+}
+.desna_grupa{
+    margin: 5px 5px 5px 0px;
+    grid-area: desni;
+    display: flex;
+    flex-direction: column;
 }
