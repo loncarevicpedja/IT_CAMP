@@ -5,9 +5,10 @@
 }
 .glavni{
     display: grid;
-    grid-template-areas: 'header'
-                         'slider'
-                         'levi_deo';
+    grid-template-areas: 'header header header header '
+                         'slider slider slider slider'
+                         'levi_deo centralni_deo centralni_deo desni_deo'
+                         'info info info info ';
 }
 .header{
     grid-area: header;
@@ -31,24 +32,70 @@
 }
 .levi_deo{
     grid-area: levi_deo;
-    height: 400px;
-    display: grid;
-    grid-template-areas:'pl'
-                        'dl'
-                        'tl' ;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
 }
 .prvi_levo{
-    grid-area: pl;
     background-color: darkorange;
     border: 1px solid black;
+    height: 30%;
 }
 .drugi_levo{
-    grid-area: dl;
     background-color: darkorange;
     border: 1px solid black;
+    height: 50%;
 }
 .treci_levo{
-    grid-area: tl;
     background-color: darkorange;
+    border: 1px solid black;
+    height: 20%;
+}
+.centralni_deo{
+    grid-area: centralni_deo;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.nav_bar{
+    height: 10%;
+    background-color: blanchedalmond;
+}
+.content{
+    height: 90%;
+    background-color: seagreen;
+}
+.desni_deo{
+    grid-area: desni_deo;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+.prvi_desno{
+    background-color: darkorange;
+    border: 1px solid black;
+    height: 70%;
+}
+.drugi_desno{
+    background-color: darkorange;
+    border: 1px solid black;
+    height: 30%;
+}
+.info{
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+.info_levi{
+    background-color: seashell;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+.info_desni{
+    background-color: seashell;
+    width: 50%;
+    height: 100%;
     border: 1px solid black;
 }
