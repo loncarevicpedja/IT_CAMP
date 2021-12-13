@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.glavni{
+    display: grid;
+    grid-template-areas: 'header'
+                         'slider'
+                         'levi_deo';
+}
+.header{
+    grid-area: header;
+    width: 100%;
+    height: 30px;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    width: 100%;
+    height: 200px;
+    background-color: seagreen;
+    grid-area: slider;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.levi_deo{
+    grid-area: levi_deo;
+    height: 400px;
+    display: grid;
+    grid-template-areas:'pl'
+                        'dl'
+                        'tl' ;
+}
+.prvi_levo{
+    grid-area: pl;
+    background-color: darkorange;
+    border: 1px solid black;
+}
+.drugi_levo{
+    grid-area: dl;
+    background-color: darkorange;
+    border: 1px solid black;
+}
+.treci_levo{
+    grid-area: tl;
+    background-color: darkorange;
+    border: 1px solid black;
+}
