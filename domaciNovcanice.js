@@ -16,4 +16,4 @@ function broji(suma, novcanice)
         suma=noviIznos;
     }
 }
-broji(123, [20, 10, 5, 2, 1]);
+broji(123, [50, 20, 10, 5, 2, 1]);
