@@ -29,3 +29,15 @@
 //     console.log(max);
 // }
 // najduziBroj([1,12,123,1234]);
+
+
+function prebaci(){
+    niz = [2, 3, 0, 12, 5, 0, 2]
+    suma = 0
+    for(i=0;i<niz.length;i++)
+    {
+        suma+=niz[i]
+    }
+    console.log(suma/niz.length);
+}
+prebaci();
