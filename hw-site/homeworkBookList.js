@@ -80,21 +80,4 @@ console.log(b1.lastBook)
 console.log(b1.currBook)
 console.log(b1.nextBook)
 
-b1.finishCurrentBook();
-
-console.log("------------------------------------------------")
-
-console.log(b1.lastBook)
-console.log(b1.currBook)
-console.log(b1.nextBook)
-
-b1.finishCurrentBook();
-
-console.log("------------------------------------------------")
-
-
-console.log(b1.lastBook)
-console.log(b1.currBook)
-console.log(b1.nextBook)
-
-b1.finishCurrentBook();
+bookList.finishCurrentBook();
