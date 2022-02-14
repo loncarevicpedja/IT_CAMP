@@ -73,7 +73,6 @@ bookList = new BookList();
 bookList.add(b1);
 bookList.add(b2);
 bookList.add(b3);
-bookList.add(b4);
 
 console.log(b1.lastBook)
 console.log(b1.currBook)
