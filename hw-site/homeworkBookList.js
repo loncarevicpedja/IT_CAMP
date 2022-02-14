@@ -74,7 +74,6 @@ bookList.add(b1);
 bookList.add(b2);
 bookList.add(b3);
 bookList.add(b4);
-bookList.add(b5);
 
 console.log(b1.lastBook)
 console.log(b1.currBook)
