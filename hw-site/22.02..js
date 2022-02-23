@@ -58,14 +58,28 @@
 //     evenNum.push(element)
 // });
 // console.log(evenNum)
-novi = [NaN, 0, 15, false, -22, "", undefined, 47, null]
-counter = 0
-novi.forEach((a, b) => {
-    if(!a)
-    {
-        counter++        
-    }
+// novi = [NaN, 0, 15, false, -22, "", undefined, 47, null]
+// counter = 0
+// novi.forEach((a, b) => {
+//     if(!a)
+//     {
+//         counter++        
+//     }
     
-});
+// });
 
-console.log(counter)
+// console.log(counter)
+
+var myObject = {
+    foo: "bar",
+    func: function() {
+        var self = this;
+        console.log("outer func:  this.foo = " + this.foo);
+        console.log("outer func:  self.foo = " + self.foo);
+        (function() {
+            console.log("inner func:  this.foo = " + this.foo);
+            console.log("inner func:  self.foo = " + self.foo);
+        }());
+    }
+};
+myObject.func();
