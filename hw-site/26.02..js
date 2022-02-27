@@ -11,6 +11,7 @@
 // find([1, 2, 3, 4], [1, 2, 4])
 
 const heroes = [
+    {name:'Thor'},
     {name:'Black Panther'},
     {name:'Captain Marvel'},
     {name:'Silver Surfer'},
