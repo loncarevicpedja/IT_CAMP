@@ -14,6 +14,7 @@ const heroes = [
     {name:'Spider Man'},
     {name:'Thor'},
     {name:'Black Panther'},
+    {name:'Captain Marvel'},
 ];
 const herNew = heroes.map((el, indeks) => {
     return{
