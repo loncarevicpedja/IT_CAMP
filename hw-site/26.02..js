@@ -10,17 +10,31 @@
 // }
 // find([1, 2, 3, 4], [1, 2, 4])
 
-const heroes = [
-    {name:'Spider Man'},
-    {name:'Thor'},
-    {name:'Black Panther'},
-    {name:'Captain Marvel'},
-    {name:'Silver Surfer'},
-];
-const herNew = heroes.map((el, indeks) => {
-    return{
-        id: indeks,
-        hero: el.name
-    };
+// const heroes = [
+//     {name:'Spider Man'},
+//     {name:'Thor'},
+//     {name:'Black Panther'},
+//     {name:'Captain Marvel'},
+//     {name:'Silver Surfer'},
+// ];
+// const herNew = heroes.map((el, indeks) => {
+//     return{
+//         id: indeks,
+//         hero: el.name
+//     };
+// })
+// console.log(herNew)
+
+function job(){
+    return 'hello world'
+}
+
+let mypromise = new Promise( (resolve, reject) => {
+    setTimeout(() => {
+        resolve(job());
+      }, 2000);
 })
-console.log(herNew)
+mypromise.then((j) =>
+{
+    console.log(j)
+})
