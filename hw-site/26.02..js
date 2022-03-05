@@ -31,7 +31,7 @@ function job(){
 
 let mypromise = new Promise( (resolve, reject) => {
     setTimeout(() => {
-        resolve(job());
+        resolve(job(r));
       }, 2000);
 })
 mypromise.then((j) =>
