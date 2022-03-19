@@ -7,10 +7,10 @@ dugme.addEventListener('click', (e) => {
   e.preventDefault();
   // console.log({email,namer,passw,usern});
   const user = {
-    email : e.target.form[0].value,
-    name : e.target.form[1].value,
-    password : e.target.form[2].value,
-    username : e.target.form[3].value,
+    name : e.target.form[0].value,
+    username : e.target.form[1].value,
+    email : e.target.form[2].value,
+    password : e.target.form[3].value,
     
   }
   console.log(user);
