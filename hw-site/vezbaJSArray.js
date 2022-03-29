@@ -1,13 +1,17 @@
-brojac = 0
-niz = [1, 2, 3, 4, 5, 3, 3, 4, 4, 6, 7, 8, 1, 2]
-pom = niz.filter((el, ind, niz) => niz.indexOf(el) === ind)
-for (let i = 0; i < pom.length; i++) {
-    for (let j = 0; j < niz.length; j++) {
-        if(pom[i] === niz[j])
-        {
-            brojac++
-        }
+class Nesto{
+    constructor(ime, prezime, godine){
+        this.ime=ime;
+        this.prezime=prezime;
+        this.godine=godine;
     }
-    pom[i].push(brojac)
+    punoletean() {
+        if(this.godine > 18)
+        return "jeste"
+        else
+        return "nije"
+    }
 }
-console.log(pom)
+var covek = new Nesto("Marko", "Markovic", 18)
+console.log(covek)
+a = covek.punoletean(); 
+console.log(a)
