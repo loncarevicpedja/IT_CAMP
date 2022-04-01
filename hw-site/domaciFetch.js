@@ -43,7 +43,7 @@ ctr.style.flexWrap='wrap';
 var pagintationCtr = document.getElementById("pagination-container");
 
 
-var fetchLink="https://catfact.ninja/facts"
+  var fetchLink="https://catfact.ninja/facts"
 
 
 function fetchData()
