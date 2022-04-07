@@ -10,7 +10,7 @@ function fetchData(){
         for (let i = 0; i < podatak.data.length; i++) {
             generateCard(podatak.data[i])        
         }
-        paginacija.innerHTML = 
+        paginacija.innerHTML = ""
         for (let i = 0; i < podatak.links.length; i++) {
             generatePage(podatak.links[i])        
         }
