@@ -1,0 +1,92 @@
+.navbar {
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.zaglavlje {
+    display: flex;
+    flex: row;
+    list-style-type: none;
+    padding: 5px;
+}
+.ikonica2 {
+    height: 50px;   
+    width: 50px;
+}
+.velikidiv{
+    
+    display: flex;
+    flex-direction: row;
+
+}
+.prvi {
+    height: 250px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: red;
+    
+
+}
+.drugi {
+    height: 250px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: red;
+}
+.treci {
+    height: 250px;
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: red;
+    
+}
+.proba {
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+.bekan {
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 80%;
+    width: 70vw;
+    
+}
+.prvi5 {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+}
+.drugi5 {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.treci5{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
